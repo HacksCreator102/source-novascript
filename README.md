@@ -7,3 +7,5 @@ novascript.createDialog("Title", "Description")
 ```lua
 novascript.createError("Title", "Description")
 ```
+# Made by
+### NovaScript owner
