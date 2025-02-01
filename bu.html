@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Download and install NovaScript APK for Roblox with ease.">
+  <title>NovaScript APK Installer</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg, #1a1a2e, #16213e);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Content Box */
+    .content-box {
+      border: 2mm solid black;
+      padding: 20px;
+      background-color: grey;
+      border-radius: 10px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 10px auto;
+      line-height: 1.5;
+    }
+
+    /* Install Button */
+    .install-btn {
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      background: #28a745;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .install-btn:hover {
+      background: #218838;
+    }
+
+    /* Loader Animation */
+    .loader {
+      display: none;
+      border: 4px solid rgba(255, 255, 255, 0.2);
+      border-top: 4px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin: 20px auto;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* List */
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 50px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.3);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-box">
+    <h1>NovaScript - The Roblox mod menu</h1>
+    <p>NovaScript is the perfect tool for Roblox enthusiasts. Install the APK quickly and easily using the button below.</p>
+
+    <!-- About Section -->
+    <section>
+      <h2>About NovaScript</h2>
+      <p>NovaScript is a powerful and user-friendly ui. With this Cheats, you can use it to play more fun!</p>
+    </section>
+
+    <!-- Features List -->
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li>Easy installation process</li>
+        <li>Compatible with all Android devices</li>
+        <li>Optimized for Roblox game scripts</li>
+        <li>Regular updates and bug fixes</li>
+        <li>Has a discord server</li>
+      </ul>
+    </section>
+
+    <!-- Install Button -->
+    <button class="install-btn" onclick="installAPK()">Install APK</button>
+
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+    <p id="status" style="display: none;">Installing... Please wait.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 NovaScript | All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function installAPK() {
+      let installBtn = document.querySelector(".install-btn");
+      let loader = document.getElementById("loader");
+      let statusText = document.getElementById("status");
+
+      installBtn.disabled = true;
+      installBtn.style.opacity = "0.5";
+      loader.style.display = "block";
+      statusText.style.display = "block";
+
+      setTimeout(() => {
+        loader.style.display = "none";
+        statusText.innerHTML = "Installation Complete!";
+        statusText.style.color = "lightgreen";
+        installBtn.innerHTML = "Installed";
+
+        // Redirect to the APK file (Replace 'NovaScript.apk' with the actual link)
+        window.location.href = "https://www.example.com";
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
